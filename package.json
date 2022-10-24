@@ -1,0 +1,31 @@
+{
+  "name": "social-media-app",
+  "version": "0.0.1",
+  "description": "social media application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MegumiKim/css-fw-ca.git"
+  },
+  "keywords": [
+    "social",
+    "media",
+    "bootstrap",
+    "sass"
+  ],
+  "author": "Megumi Kimura <kimuramegumi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MegumiKim/css-fw-ca/issues"
+  },
+  "homepage": "https://github.com/MegumiKim/css-fw-ca#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.55.0"
+  }
+}
