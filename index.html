@@ -11,7 +11,7 @@
   <body>
     <nav class="navbar navbar-expand-md bg-purple-bg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Social App</a>
+        <a class="navbar-brand" href="/">Howdy</a>
         <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <img
           src="/img/IMG_20181126_210142.jpeg"
@@ -42,16 +42,32 @@
     </nav>
     <div class="container">
       <main>
-        <section class="row" id="new-post">
-          <form class="col-lg-6 m-auto needs-validation" novalidate="" id="post-form">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="What's new?" aria-label="comment form" aria-describedby="button-addon2">
-                  <button class="btn btn-outline-pink" type="button" id="button-addon2">Publish</button>
-                </div>
-                <div class="invalid-feedback">
-                  Content is missing
-                </div>
-          </form>
+        <section class="col-lg-6 m-auto" id="new-post">
+      <!-- Button trigger modal -->     
+      <input type="text" class="form-control col-lg-6 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-trigger="focus" placeholder="Howdy! What's up?">
+      </input>
+<!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Write a new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="modal-body d-flex gx-1">
+            <textarea type="text" class="form-control"></textarea>
+            <button class="btn bg-light"><i class="fa-regular fa-image"></i></button>
+            </form>
+            <div class="invalid-feedback">
+              Content is missing
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
         </section>
         <section id='updates' class="row">
          <div class="d-flex flex-column gap-3 col-lg-6 m-auto">
@@ -59,18 +75,20 @@
             <img src="/img/post2.jpg" class="card-img-top" alt="image posted by a user">
             <div class="card-body">
               <h5 class="card-title">John Doe</h5>
-              <p class="card-text">Hey I am in Norway, isn't it awesome?</p>
-              <div class="row p-1">
-                <div class="col-3 col-md-1 p-1">
-                  <button type="button" class="btn btn-primary position-relative">
+              <p class="card-text">Hey I am in Norway, isn't it awesome? It's raining and foggy in Oslo.</p>
+              <div class="row p-1 gx-2">
+
+                <div class="col-3 col-md-2 p-1">
+                  <button type="button" class="btn btn-primary position-relative" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#likes-count" aria-expanded="false" aria-controls="like-count">
                     <i class="fa-regular fa-thumbs-up"></i>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                      20
+                      3
                       <span class="visually-hidden">unread messages</span>
                     </span>
                   </button>
-                </div>
-                <p class="col-4 col-md-2 p-1">
+              </div>
+                <div class="col-4 col-md-2 p-1">
                   <button type="button" class="btn btn-primary position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapsComments" aria-expanded="false" aria-controls="collapsComments">
                     Comments
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -78,8 +96,7 @@
                       <span class="visually-hidden">unread messages</span>
                     </span>
                   </button>
-                </p>
-              </div>
+                </div>
               <div class="collapse px-3" id="collapsComments">
                 <div class="card mb-3 p-2 row">
                   <div class="d-flex g-0">
@@ -99,19 +116,14 @@
                   </div>
                 </div>
               </div>
-                  <button type="button" class="btn btn-primary position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapsExample" aria-expanded="false" aria-controls="collapsComments">
-                    Like
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                      2
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </button>
+
+              <div class="collapse px-3" id="likes-count">
+                <img src="/img/portrait1.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
+                <img src="/img/portrait2.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
+                <img src="/img/portrait3.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
               </div>
-              <div class="collapse px-3" id="collapseExample">
-<div class="row">
-<p>hello</p>
-</div>
-              </div>
+            </div>
+
               <section class="p-1">
                 <div class="input-group mb-3">
                   <input type="text" class="form-control" placeholder="Write a comment" aria-label="comment form" aria-describedby="button-addon2">
