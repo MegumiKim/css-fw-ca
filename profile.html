@@ -12,7 +12,7 @@
     ></script>
   </head>
   <body>
-    <header class="py-3 mb-3 border-bottom">
+    <header class="py-3 mb-3 border-bottom bg-dark text-light bg-primary bg-gradient">
       <div
         class="container-fluid d-grid gap-3 align-items-center"
         style="grid-template-columns: 1fr 2fr"
@@ -20,7 +20,7 @@
         <div class="logo">
           <a
             href="/"
-            class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-dark text-decoration-none"
+            class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0  text-decoration-none  link-light"
           >
             Social APP
           </a>
@@ -34,7 +34,6 @@
               aria-label="Search"
             />
           </form>
-
           <div class="flex-shrink-0 dropdown">
             <a
               href="#"
@@ -61,205 +60,198 @@
       </div>
     </header>
     <div class="container">
-      <main>
-        <section id="about-me" class="row d-flex justify-content-center">
-          <div class="card pt-2 d-flex" style="width: 18rem">
-            <div class="d-flex">
-              <img
-                src="/img/IMG_20181126_210142.jpeg"
-                alt="profile picture"
-                width="150px"
-                height="150px"
-                class="rounded-circle m-auto"
-              />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Megumi Kimura</h5>
-              <p class="card-text">Hi, it's Megumi. Nice to meet you.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <h6>Contact</h6>
-                <p>megumi@email.com</p>
-              </li>
-              <li class="list-group-item">
-                <h6>Hobby</h6>
-                <p>Capoeira</p>
-              </li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-        </section>
-        <section class="row" id="new-post">
-          <form class="needs-validation" novalidate="" id="post-form">
-            <div class="row g-3">
-              <div class="col-12">
-                <label for="password" class="form-label">Share a story</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="latest-feed"
-                  minlength="1"
-                  placeholder="What's up?"
-                  required
+      <main class="row">
+        <div class="col-12 col-md-7 col-lg-3">
+          <section id="about-me" class="row d-flex justify-content-center">
+            <!-- <div class="col-12 profile-banner pt-md-5">
+            </div> -->
+            <div class="card pt-2 d-flex" style="width: 18rem">
+              <div class="d-flex">
+                <img
+                  src="/img/IMG_20181126_210142.jpeg"
+                  alt="profile picture"
+                  width="150px"
+                  height="150px"
+                  class="rounded-circle m-auto"
                 />
-                <div class="invalid-feedback">Content is missing</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center" style="color: var(--bs-pink)">Megumi Kimura</h5>
+                <p class="card-text text-center">Hi, it's Megumi. Nice to meet you.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h6>Contact</h6>
+                  <p>megumi@email.com</p>
+                </li>
+                <li class="list-group-item">
+                  <h6>Hobby</h6>
+                  <p>Capoeira</p>
+                </li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
               </div>
             </div>
-            <button
-              class="w-50 mt-1 btn btn-primary btn-sm"
-              type="submit"
-              id="btn-submit"
-            >
-              Post
-            </button>
-          </form>
-        </section>
-        <section id='updates' class="row d-flex justify-content-center">
-          <div class="card m-3" style="width: 18rem;">
-            <img src="/img/post1.webp" class="card-img-top" alt="image posted by a user">
-            <div class="card-body">
-              <h5 class="card-title">John Doe</h5>
-              <p class="card-text">Hey I am in Norway, isn't it awesome?</p>
-              <div class="class row">
-                <div class="col-2 m-2">
-                  <button type="button" class="btn btn-primary position-relative">
-                    <i class="fa-regular fa-thumbs-up"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                      20
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </button>
-                </div>
-                <p class="col-2 m-2 ">
-                  <button type="button" class="btn btn-primary position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Comments
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                      2
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </button>
-                </p>
+          </section>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6 order-md-3 order-lg-2 m-auto">
+          <section class="row" id="new-post">
+            <form class="col-lg-6 m-auto needs-validation" novalidate="" id="post-form">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="What's new?" aria-label="comment form" aria-describedby="button-addon2">
+                <button class="btn btn-outline-pink" type="button" id="button-addon2">Publish</button>
               </div>
-              <div class="collapse" id="collapseExample">
-                <div class="card mb-3 row" style="max-width: 540px;">
-                  <div class="row g-0">
-                    <div class="flex-shrink-0">
-                      <a href="./profile.html" class="d-block link-dark text-decoration-none" >
-                        <img src="/img/IMG_20181126_210142.jpeg" alt="profile picture" width="32" height="32" class="rounded-circle">
-                      </a>
-                    </div>
-                    <div class="col">
-                      <div class="card-body">
-                        <h5 class="card-title">Lady Gaga</h5>
-                        <p class="card-text">That's awesome.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <div class="invalid-feedback">
+                Content is missing
+              </div>
+        </form>
+          </section>
+          <section id='updates' class="row d-flex justify-content-center">
+            <h4 class="py-1 mt-2">Your feeds</h4>
+            <div class="card m-3" style="width: 18rem;">
+              <img src="/img/post1.webp" class="card-img-top" alt="image posted by a user">
+              <div class="card-body">
+                <h5 class="card-title">Megumi Kim</h5>
+                <p class="card-text">This is my cat.</p>
+                <div class="class row">
+                  <div class="col-2 m-2">
+                    <button type="button" class="btn btn-primary position-relative">
+                      <i class="fa-regular fa-thumbs-up"></i>
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        20
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </button>
+                  </div>
+                  <p class="col-2 m-2">
+                    <button type="button" class="btn btn-primary position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Comments
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        2
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </button>
+                  </p>
+                </div>
+                <div class="collapse" id="collapseExample">
+                  <div class="card mb-3 row" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="flex-shrink-0">
+                        <a href="./profile.html" class="d-block link-dark text-decoration-none" >
+                          <img src="/img/IMG_20181126_210142.jpeg" alt="profile picture" width="32" height="32" class="rounded-circle">
+                        </a>
+                      </div>
+                      <div class="col">
+                        <div class="card-body">
+                          <h5 class="card-title">Lady Gaga</h5>
+                          <p class="card-text">That's awesome.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <div class="card card-body my-2">
+                    Amazing
+                  </div>
                 </div>
-                <div class="card card-body my-2">
-                  Amazing
-                </div>
+                <section class="p-1">
+                  <input class="form-control" placeholder="post a comment"></input>
+                </section>
               </div>
-              <section class="p-1">
-                <input class="form-control" placeholder="post a comment"></input>
-              </section>
             </div>
-          </div>
-          <div class="card m-auto" style="width: 18rem;">
-            <img src="/img/post4.webp" class="card-img-top" alt="image posted by a user">
-            <div class="card-body">
-              <h5 class="card-title">John Doe</h5>
-              <p class="card-text">Hey I am in Bali, isn't it awesome?</p>
-              <div class="class row">
-                <div class="col-2 m-2">
-                  <button type="button" class="btn btn-primary position-relative">
-                    <i class="fa-regular fa-thumbs-up"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                      20
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </button>
+            <div class="card m-auto" style="width: 18rem;">
+              <img src="/img/post4.webp" class="card-img-top" alt="image posted by a user">
+              <div class="card-body">
+                <h5 class="card-title">John Doe</h5>
+                <p class="card-text">Hey I am in Bali, isn't it awesome?</p>
+                <div class="class row">
+                  <div class="col-2 m-2">
+                    <button type="button" class="btn btn-primary position-relative">
+                      <i class="fa-regular fa-thumbs-up"></i>
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        20
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </button>
+                  </div>
+                  <p class="col-2 m-2 ">
+                    <button type="button" class="btn btn-primary position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Comments
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        2
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </button>
+                  </p>
                 </div>
-                <p class="col-2 m-2 ">
-                  <button type="button" class="btn btn-primary position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Comments
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                      2
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </button>
-                </p>
-              </div>
-              <div class="collapse" id="collapseExample">
-                <div class="card mb-3 row" style="max-width: 540px;">
-                  <div class="row g-0">
-                    <div class="flex-shrink-0">
-                      <a href="./profile.html" class="d-block link-dark text-decoration-none" >
-                        <img src="/img/IMG_20181126_210142.jpeg" alt="profile picture" width="32" height="32" class="rounded-circle">
-                      </a>
-                    </div>
-                    <div class="col">
-                      <div class="card-body">
-                        <h5 class="card-title">Lady Gaga</h5>
-                        <p class="card-text">That's awesome.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="collapse" id="collapseExample">
+                  <div class="card mb-3 row" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="flex-shrink-0">
+                        <a href="./profile.html" class="d-block link-dark text-decoration-none" >
+                          <img src="/img/IMG_20181126_210142.jpeg" alt="profile picture" width="32" height="32" class="rounded-circle">
+                        </a>
+                      </div>
+                      <div class="col">
+                        <div class="card-body">
+                          <h5 class="card-title">Lady Gaga</h5>
+                          <p class="card-text">That's awesome.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <div class="card card-body my-2">
+                    Amazing
+                  </div>
                 </div>
-                <div class="card card-body my-2">
-                  Amazing
-                </div>
+                <section class="p-1">
+                  <input class="form-control" placeholder="post a comment"></input>
+                </section>
               </div>
-              <section class="p-1">
-                <input class="form-control" placeholder="post a comment"></input>
-              </section>
             </div>
-          </div>
-
-
-        </section>
-
-        <section id="contacts-list">
-          <h2>My Contacts</h2>
-          <div class="list-group w-auto">
-            <a href="profile.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-              <img src="/img/portrait1.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-              <div class="d-flex gap-2 w-100 justify-content-between">
-                <div>
-                  <h6 class="mb-0">Sara Smith</h6>
-                  <p class="mb-0 opacity-75">add. info</p>
+          </section>
+        </div>
+        <div class="col-12 col-md-5 col-lg-3 order-md-2">
+          <section id="contacts-list">
+            <h4 class=" py-1 mt-2">My Contacts</h4>
+            <div class="list-group w-auto">
+              <a href="#" class="list-group-item list-group-item-action d-flex py-3" aria-current="true">
+                <img src="/img/portrait1.jpg" alt="profile picture" class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" >
+                <div class="d-flex w-100 justify-content-between small lh-sm text-muted">
+                  <div>
+                    <strong class="text-gray-dark">Sara Smith</strong>
+                    <p class="mb-0 opacity-75">"Feeling happy"</p>
+                  </div>
+                  <small class="opacity-50 text-nowrap">2h</small>
                 </div>
-                <small class="opacity-50 text-nowrap">now</small>
-              </div>
-            </a>
-            <a href="profile.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-              <img src="/img/portrait2.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-              <div class="d-flex gap-2 w-100 justify-content-between">
-                <div>
-                  <h6 class="mb-0">Lady Gaga</h6>
-                  <p class="mb-0 opacity-75">add. info</p>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action d-flex py-3" aria-current="true">
+                <img src="/img/portrait2.jpg" alt="profile picture" class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" >
+                <div class="d-flex w-100 justify-content-between small lh-sm text-muted">
+                  <div>
+                    <strong class="text-gray-dark">Sara Smith</strong>
+                    <p class="mb-0 opacity-75">"Don't disturb"</p>
+                  </div>
+                  <small class="opacity-50 text-nowrap">2h</small>
                 </div>
-                <small class="opacity-50 text-nowrap">3d</small>
-              </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-              <img src="/img/portrait3.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-              <div class="d-flex gap-2 w-100 justify-content-between">
-                <div>
-                  <h6 class="mb-0">Mary </h6>
-                  <p class="mb-0 opacity-75">add. ifo</p>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action d-flex py-3" aria-current="true">
+                <img src="/img/portrait1.jpg" alt="" class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" >
+                <div class="d-flex w-100 justify-content-between small lh-sm text-muted">
+                  <div>
+                    <strong class="text-gray-dark">Mary Gold</strong>
+                    <p class="mb-0 opacity-75">"Almost weekend"</p>
+                  </div>
+                  <small class="opacity-50 text-nowrap">1d</small>
                 </div>
-                <small class="opacity-50 text-nowrap">1w</small>
+              </a>
               </div>
-            </a>
-          </div>
-        </section>
+          </section>
+        </div>
+
       </main>
       <footer class="my-5 pt-5 text-muted text-center text-small">
         <p class="mb-1">© 2022 Social App</p>
