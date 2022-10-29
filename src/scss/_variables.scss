@@ -31,7 +31,7 @@ $cyan: #0dcaf0;
 // my color pallet
 $beige: #fff8d6;
 $turquoise: #53a6a6;
-$my-yellow: #ffd500;
+$myYellow: #ffd500;
 $my-purple: #62366a;
 
 $container-max-widths: (
@@ -44,7 +44,7 @@ $container-max-widths: (
 
 $primary: $turquoise;
 $special: $my-purple;
-$back-ground: $my-yellow;
+$back-ground: $myYellow;
 // $back-ground: lighten($gray-500, 20%);
 $secondary: $gray-600 !default;
 $success: $green !default;
@@ -71,6 +71,7 @@ $theme-colors: (
   "dark": $dark,
   "pink": $pink,
   "my-bg": $back-ground,
+  "special": $my-purple,
 ) !default;
 
 // Options
