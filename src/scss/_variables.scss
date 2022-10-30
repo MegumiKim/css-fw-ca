@@ -32,7 +32,7 @@ $cyan: #0dcaf0;
 $beige: #fff8d6;
 $turquoise: #53a6a6;
 $myYellow: #ffd500;
-$my-purple: #62366a;
+$myPurple: #62366a;
 
 $container-max-widths: (
   sm: 540px,
@@ -43,7 +43,7 @@ $container-max-widths: (
 );
 
 $primary: $turquoise;
-$special: $my-purple;
+$special: $myPurple;
 $back-ground: $myYellow;
 $secondary: $gray-600 !default;
 $success: $green !default;
@@ -65,8 +65,8 @@ $theme-colors: (
   "dark": $dark,
   "pink": $pink,
   "my-bg": $back-ground,
-  "special": $my-purple,
-) !default;
+  "special": $myPurple,
+);
 
 // Options
 $enable-caret: false;

@@ -24,10 +24,6 @@
   color: yellow;
 }
 
-$back-ground: lighten($purple, 20%);
+$back-ground: lighten($myPurple, 20%);
 
-$gradient: linear-gradient(
-  180deg,
-  rgba($white, 0.15),
-  rgba($white, 0)
-) !default;
+$gradient: linear-gradient(180deg, rgba($white, 0.15), rgba($white, 0));
