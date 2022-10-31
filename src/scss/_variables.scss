@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Gudea&family=Hammersmith+One&display=swap");
-
-// Font-styles
-$font-family-sans-serif: Gudea, system-ui, -apple-system, "Segoe UI", Roboto;
-$headings-font-family: Hammersmith One;
-
-// Color
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -27,12 +21,7 @@ $yellow: #ffc107;
 $green: #198754;
 $teal: #20c997;
 $cyan: #0dcaf0;
-
-// my color pallet
-$beige: #fff8d6;
-$turquoise: #53a6a6;
-$myYellow: #ffd500;
-$myPurple: #62366a;
+$beige: #ccc1a4;
 
 $container-max-widths: (
   sm: 540px,
@@ -42,9 +31,21 @@ $container-max-widths: (
   xxl: 1320px,
 );
 
-$primary: $turquoise;
-$special: $myPurple;
-$back-ground: $myYellow;
+$font-family-sans-serif: Gudea, system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+// $border-radius: ;
+// $border-radius-sm: 0;
+// $border-radius-lg: 0;
+// $border-radius-xl: 0;
+// $border-radius-2xl: 0;
+// $border-radius-pill: 0;
+
+$primary: $purple;
+$special: $pink;
+$back-ground: lighten($gray-500, 20%);
 $secondary: $gray-600 !default;
 $success: $green !default;
 $info: $cyan !default;
@@ -52,6 +53,12 @@ $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-900 !default;
+
+// $back-ground: $purple-100;
+// $body-bg: #393e46;
+// $text-muted: #6c757d;
+// $body-color: $text-muted;
+$headings-font-family: Hammersmith One;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
@@ -64,10 +71,34 @@ $theme-colors: (
   "light": $light,
   "dark": $dark,
   "pink": $pink,
-  "my-bg": $back-ground,
-  "special": $myPurple,
-);
+  "purple-bg": $back-ground,
+) !default;
 
 // Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
 $enable-caret: false;
-// $enable-gradients: true;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: true;
+$enable-transitions: true !default;
+$enable-reduced-motion: true !default;
+$enable-smooth-scroll: true !default;
+$enable-grid-classes: true !default;
+$enable-container-classes: true !default;
+$enable-cssgrid: false !default;
+$enable-button-pointers: true !default;
+$enable-rfs: true !default;
+$enable-validation-icons: true !default;
+$enable-negative-margins: false !default;
+$enable-deprecation-messages: true !default;
+$enable-important-utilities: true !default;
+
+$back-ground: lighten($purple, 20%);
+
+$gradient: linear-gradient(
+  180deg,
+  rgba($white, 0.15),
+  rgba($white, 0)
+) !default;
