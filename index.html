@@ -77,37 +77,31 @@
             <div class="card-body">
               <h5 class="card-title">John Doe</h5>
               <p class="card-text">Hey I am in Norway, isn't it awesome? It's sunny and green here! </p>
-              <div class="row p-1 gx-2 d-flex">
-
-                <!-- <div class="col-3 col-md-2 p-1"> -->
-                  <button type="button" class="btn btn-special position-relative" type="button" data-bs-toggle="collapse" 
-                  data-bs-target="#likes-count" aria-expanded="false" aria-controls="like-count">
+              <div class="row">
+                <div class="d-felx my-3">
+                  <button type="button" class="btn btn-special position-relative me-3" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#likes-count-1" aria-expanded="false" aria-controls="like-count">
                     <i class="fa-regular fa-thumbs-up"></i>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                       3
                       <span class="visually-hidden">unread messages</span>
                     </span>
                   </button>
-              <!-- </div> -->
-                <!-- <div class="col-4 col-md-2 p-1"> -->
-                  <button type="button" class="btn btn-special position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapsComments-post1" aria-expanded="false" aria-controls="collapsComments">
+                  <button type="button" class="btn btn-special position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapsComments-1" aria-expanded="false" aria-controls="collapsComments">
                     Comments
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                       1
                       <span class="visually-hidden">unread messages</span>
                     </span>
                   </button>
-                <!-- </div> -->
-
-                <div class="collapse px-3 my-1" id="likes-count">
+                </div>
+                <div class="collapse px-3 my-1" id="likes-count-1">
                   <img src="/img/portrait1.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
                   <img src="/img/portrait2.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
                   <img src="/img/portrait3.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
-                </div>
-
-                
-              <div class="collapse px-3" id="collapsComments-post1">
-                <div class="card my-3 p-3 row">
+                </div>                
+              <div class="collapse px-3" id="collapsComments-1">
+                <div class="card my-3 mx-sm-3 p-3 row">
                   <div class="d-flex g-0">
                     <div class="flex-shrink-0 me-2">
                       <a href="./profile.html" class="d-block link-dark text-decoration-none" >
@@ -115,8 +109,7 @@
                       </a>
                     </div>
                     <div class="col">
-                      <div class="card-body p-0
-                      ">
+                      <div class="card-body p-0">
                         <h5 class="card-title">Lady Gaga</h5>
                         <p class="card-text">That's awesome.</p>
                         <p class="card-text"><small class="text-muted">posted 3h ago</small></p>
@@ -128,7 +121,7 @@
 
             </div>
 
-              <section class="p-1">
+              <section class="p-1 mx-sm-3">
                 <div class="input-group mb-3">
                   <input type="text" class="form-control" placeholder="Write a comment" aria-label="comment form" aria-describedby="button-addon2">
                   <button class="btn btn-outline-special" type="button" id="button-addon2">Post</button>
@@ -136,26 +129,22 @@
               </section>
             </div>
           </div>
-
-          <div class="card m-auto mt-3";">
+          <div class="card m-auto mt-3" id="post2">
             <img src="/img/post3.jpg" class="card-img-top" alt="image posted by a user">
             <div class="card-body">
-              <h5 class="card-title">Catty Cat</h5>
-              <p class="card-text">My kitten is so lovely. </p>
-              <div class="row p-1 gx-2">
-
-                <div class="col-3 col-md-2 p-1">
-                  <button type="button" class="btn btn-special position-relative" type="button" data-bs-toggle="collapse" 
-                  data-bs-target="#likes-count" aria-expanded="false" aria-controls="like-count">
+              <h5 class="card-title">Mary Gold</h5>
+              <p class="card-text">My kitty is so cute! </p>
+              <div class="row">
+                <div class="d-felx my-3">
+                  <button type="button" class="btn btn-special position-relative me-3" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#likes-count-2" aria-expanded="false" aria-controls="like-count">
                     <i class="fa-regular fa-thumbs-up"></i>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                       3
                       <span class="visually-hidden">unread messages</span>
                     </span>
                   </button>
-              </div>
-                <div class="col-4 col-md-2 p-1">
-                  <button type="button" class="btn btn-special position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapsComments-post2" aria-expanded="false" aria-controls="collapsComments">
+                  <button type="button" class="btn btn-special position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapsComments-2" aria-expanded="false" aria-controls="collapsComments">
                     Comments
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                       1
@@ -163,38 +152,31 @@
                     </span>
                   </button>
                 </div>
-
-                <div class="collapse px-3 my-1" id="likes-count">
+                <div class="collapse px-3 my-1" id="likes-count-2">
                   <img src="/img/portrait1.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
                   <img src="/img/portrait2.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
                   <img src="/img/portrait3.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
-                </div>
-
-                
-              <div class="collapse px-3" id="collapsComments-post2">
-                <div class="card my-3 p-3 row">
+                </div>                
+              <div class="collapse px-3" id="collapsComments-2">
+                <div class="card my-3 mx-sm-3 p-3 row">
                   <div class="d-flex g-0">
                     <div class="flex-shrink-0 me-2">
                       <a href="./profile.html" class="d-block link-dark text-decoration-none" >
-                        <img src="/img/portrait3.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
+                        <img src="/img/portrait1.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
                       </a>
                     </div>
                     <div class="col">
-                      <div class="card-body p-0
-                      ">
-                        <h5 class="card-title">Sara Smith</h5>
-                        <p class="card-text">So cute!!</p>
+                      <div class="card-body p-0">
+                        <h5 class="card-title">Lady Gaga</h5>
+                        <p class="card-text">So lovely</p>
                         <p class="card-text"><small class="text-muted">posted 3h ago</small></p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-
             </div>
-
-              <section class="p-1">
+              <section class="p-1 mx-sm-3">
                 <div class="input-group mb-3">
                   <input type="text" class="form-control" placeholder="Write a comment" aria-label="comment form" aria-describedby="button-addon2">
                   <button class="btn btn-outline-special" type="button" id="button-addon2">Post</button>
@@ -202,25 +184,22 @@
               </section>
             </div>
           </div>
-          <div class="card m-auto mt-3";">
+          <div class="card m-auto mt-3" id="post3">
             <img src="/img/post4.webp" class="card-img-top" alt="image posted by a user">
             <div class="card-body">
-              <h5 class="card-title">Mary Smith</h5>
-              <p class="card-text">I'm on vacation.</p>
-              <div class="row p-1 gx-2">
-
-                <div class="col-3 col-md-2 p-1">
-                  <button type="button" class="btn btn-special position-relative" type="button" data-bs-toggle="collapse" 
-                  data-bs-target="#likes-count" aria-expanded="false" aria-controls="like-count">
+              <h5 class="card-title">Lady Gaga</h5>
+              <p class="card-text">I am on vacation.</p>
+              <div class="row">
+                <div class="d-felx my-3">
+                  <button type="button" class="btn btn-special position-relative me-3" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#likes-count-3" aria-expanded="false" aria-controls="like-count">
                     <i class="fa-regular fa-thumbs-up"></i>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                       3
                       <span class="visually-hidden">unread messages</span>
                     </span>
                   </button>
-              </div>
-                <div class="col-4 col-md-2 p-1">
-                  <button type="button" class="btn btn-special position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapsComments-post3" aria-expanded="false" aria-controls="collapsComments">
+                  <button type="button" class="btn btn-special position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#collapsComments-3" aria-expanded="false" aria-controls="collapsComments">
                     Comments
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                       1
@@ -228,37 +207,32 @@
                     </span>
                   </button>
                 </div>
-
-                <div class="collapse px-3 my-1" id="likes-count">
+                <div class="collapse px-3 my-1" id="likes-count-3">
                   <img src="/img/portrait1.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
                   <img src="/img/portrait2.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
                   <img src="/img/portrait3.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
-                </div>
-
-                
-              <div class="collapse px-3" id="collapsComments-post3">
-                <div class="card my-3 p-3 row">
+                </div>                
+              <div class="collapse px-3" id="collapsComments-3">
+                <div class="card my-3 mx-sm-3 p-3 row">
                   <div class="d-flex g-0">
                     <div class="flex-shrink-0 me-2">
                       <a href="./profile.html" class="d-block link-dark text-decoration-none" >
-                        <img src="/img/portrait3.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
+                        <img src="/img/portrait2.jpg" alt="profile picture" width="32" height="32" class="rounded-circle">
                       </a>
                     </div>
                     <div class="col">
-                      <div class="card-body p-0
-                      ">
-                        <h5 class="card-title">Sara Smith</h5>
-                        <p class="card-text">How nice.</p>
+                      <div class="card-body p-0">
+                        <h5 class="card-title">Mary Gold</h5>
+                        <p class="card-text">How nice!</p>
                         <p class="card-text"><small class="text-muted">posted 3h ago</small></p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
 
-              <section class="p-1">
+              <section class="p-1 mx-sm-3">
                 <div class="input-group mb-3">
                   <input type="text" class="form-control" placeholder="Write a comment" aria-label="comment form" aria-describedby="button-addon2">
                   <button class="btn btn-outline-special" type="button" id="button-addon2">Post</button>
@@ -266,9 +240,6 @@
               </section>
             </div>
           </div>
-
-
-
         </section>
       </main>
       <footer class="my-5 pt-5 text-muted text-center text-small">
