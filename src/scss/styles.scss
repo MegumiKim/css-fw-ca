@@ -6,31 +6,3 @@
 
 // custom styles
 @import "./components/navbar";
-@import "./components/buttons";
-@import "./components/card";
-
-@mixin backImage($image, $height: 50) {
-  background: url($image);
-  height: $height + vh;
-  background-size: cover;
-  background-position-y: center;
-  position: relative;
-}
-
-.profile-banner {
-  @include backImage("/img/post2.jpg");
-}
-
-@mixin btn($col: #444) {
-  background: $col;
-  border-radius: 5px;
-}
-
-.btn {
-  @include btn;
-}
-
-.btn-primary {
-  @include btn($col: #3ab5e9);
-  color: yellow;
-}
