@@ -1,7 +1,7 @@
 {
   "name": "Howdy",
   "version": "0.0.1",
-  "description": "social media application made with bootstrap",
+  "description": "social media application built with bootstrap",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
