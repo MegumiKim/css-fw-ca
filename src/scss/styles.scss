@@ -1,13 +1,8 @@
-$blue: blue;
+// BS variables overrides
+@import "variables";
 
-.test {
-  display: none;
+// BS styles
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
-  &-button {
-    background-color: $blue;
-  }
-}
-
-h1 {
-  color: red;
-}
+// custom styles
+@import "./components/navbar";
